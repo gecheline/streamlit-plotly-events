@@ -95,7 +95,7 @@ def plotly_events(
     """
     # kwargs will be exposed to frontend in "args"
     component_value = _component_func(
-        plot_obj=plot_fig.to_json(),
+        plot_obj=plot_fig.to_plotly_json(),
         override_height=override_height,
         override_width=override_width,
         key=key,
